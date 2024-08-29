@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
     <title>Login Page</title>
+<<<<<<< HEAD
 </head>
 <body>
     <video autoplay muted loop class="background-video">
         <source src="car.mp4" type="video/mp4"> <!-- Update the path to your video file -->
+=======
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="car.mp4" type="video/mp4"> 
+>>>>>>> a28d225fc35f00f27e5e74b1559fd05521c896f9
         Your browser does not support the video tag.
     </video>
     <div class="container">
@@ -17,6 +27,7 @@
             <form>
                 <div class="input-group">
                     <label for="username">Username:</label>
+<<<<<<< HEAD
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="input-group">
@@ -24,6 +35,15 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit">Login</button>
+=======
+                    <input type="text" id="username" name="username" placeholder="User-Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password"  name="password" placeholder="Password" required >
+                </div>
+                <button onclick="login()" type="submit">Login</button>
+>>>>>>> a28d225fc35f00f27e5e74b1559fd05521c896f9
             </form>
             <p class="sign-in-option">Don't have an account? <a href="signup.html">Sign Up</a></p>
         </div>
@@ -32,5 +52,22 @@
             <p>Join us today and experience the best services we have to offer.</p>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    <script>
+        function login() {
+            const storedUsername = localStorage.getItem('username');
+            const storedPassword = localStorage.getItem('password');
+            const $username = $('#username').val();
+            const $password = $('#password').val();
+
+            if ($username === storedUsername && $password === storedPassword) {
+                alert('Login successful!');
+            } else {
+                alert('Invalid username or password.');
+            }
+        }
+    </script>
+>>>>>>> a28d225fc35f00f27e5e74b1559fd05521c896f9
 </body>
 </html>
