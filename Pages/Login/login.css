@@ -76,4 +76,7 @@ button:hover {
     margin-top: 10px;
     color: white; /* White text for the sign-in option */
 }
-
+a
+{
+ color: lawngreen;
+}
