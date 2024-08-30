@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    overflow: hidden; /* Prevent scrollbars */
+    overflow: hidden; 
 }
 
 .background-video {
@@ -11,69 +11,160 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the entire background */
-    z-index: -1; /* Send the video behind other elements */
+    object-fit: cover; 
+    z-index: -1; 
 }
 
 .container {
-    display: flex; /* Use flexbox to create a two-column layout */
-    height: 100vh; /* Full viewport height */
-}
+    display: flex; 
+    height: 100vh; }
 
 .login-container {
-    background: black; /* Change login box color to black */
-    padding: 30px; /* Increased padding for the box */
+    background: black; 
+    background: none;
+    padding: 30px; 
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 320px; /* Width of the login box, slightly larger than input fields */
-    margin: auto; /* Center the login box vertically */
-    color: white; /* Set font color to white for all text in the container */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center content vertically */
+    width: 320px; 
+    margin: auto;
+    color: white;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
 }
 
 .text-container {
-    width: 50%; /* Width of the text area */
+    width: 50%; 
     display: flex;
-    flex-direction: column; /* Stack text vertically */
-    justify-content: center; /* Center text vertically */
-    align-items: center; /* Center text horizontally */
-    color: white; /* Set font color to white for text */
-    padding: 20px; /* Padding for the text container */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    flex-direction: column; 
+    /* justify-content: ;  */
+    align-items: flex-start; 
+    color: white; 
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
+ 
+.text-container h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 150px;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: -50px;
+}
+
+.text-container p1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 125px;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
+
+  .text-container p2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: italic;
+    margin-top: -10px;
+   margin-bottom: 0px;
+  }
+  .text-container p5{
+    font-family:"roboto";
+    position: absolute;
+    bottom:10px;
+    right:10px;
+  }
+  .text-container .typing-effect {
+    --letters: 22; 
+    --letter-width: .6em; 
+    --duration: 10s; 
+    font-family: "Playfair Display", serif;
+    white-space: nowrap;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 45px;
+    margin-top: -8px;
+    font-style: italic;
+    overflow: hidden;
+    display: inline-flex;
+    animation: tape var(--duration) steps(var(--letters)) both;
+}
+
+.typing-effect span {
+    width: var(--letter-width);
+    flex: none;
+    opacity: 0; 
+    animation: fadeIn var(--duration) steps(var(--letters)) both;
+}
+
+@keyframes tape {
+    to {
+        width: calc(var(--letters) * var(--letter-width));
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  .text-container p5 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-size: 15px;
+    font-style: normal;
+  }
 .input-group {
     margin-bottom: 15px;
 }
 
 input {
     width: 100%;
-    padding: 10px; /* Increased padding for input fields */
+    padding: 10px; 
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #333; /* Dark background for input fields */
-    color: white; /* White text color for input fields */
-}
-
+    background-color: #333; 
+    color: white;}
 button {
     width: 100%;
     padding: 10px;
-    background-color: grey; /* Change button color to grey */
-    color: white; /* White text color for button */
+    background-color: grey; 
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkgrey; /* Change hover color to dark grey */
+    background-color: darkgrey;
 }
 
 .sign-in-option {
-    text-align: center; /* Center the sign-in option text */
+    text-align: center; 
     margin-top: 10px;
-    color: white; /* White text for the sign-in option */
+    color: white; 
+}
+a
+{
+ color: lawngreen;
 }
 
+.logo {
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    width: 150px; 
+    height: auto;
+}
