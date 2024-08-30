@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Page</title>
     <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your CSS file -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
         </script>
 </head>
 
 <body>
+    <video autoplay muted loop>
+        <source src="car.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="container">
         <h2>Signup</h2>
         <input type="text" id="username" placeholder="Username" required>
         <input type="password" id="password" placeholder="Password" required>
         <button onclick="signup()">Signup</button>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <h1 class="header">Welcome to our Page</h1>
+            <p class="paragraph">Let's explore this world!</p>
+        </div>
     </div>
 
     <script>
@@ -34,8 +45,6 @@
                 alert('Please fill in all fields.');
             }
         }
-
-
     </script>
 </body>
 

@@ -4,14 +4,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
-}
+    background-color: #121212; 
+    color: white; 
+    position: relative; 
+    overflow: hidden; 
+    margin: 0; 
 
 .container {
-    background: #fff;
-    padding: 20px;
+    background: #1e1e1e; 
+    padding: 30px; 
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+    width: 450px;
+    position: relative; 
+    z-index: 1; /* Bring container above video */
 }
 
 input {
@@ -20,17 +26,73 @@ input {
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
+    background-color: #2c2c2c; /* Dark input background */
+    color: white; /* White text for input */
+    border: 1px solid #444; /* Dark border */
 }
 
 button {
     padding: 10px;
     width: 100%;
-    background-color: #28a745;
-    color: white;
+    background-color: #007bff; /* Button color for dark theme */
+    color: white; /* White text for button */
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3; /* Darker button on hover */
+}
+
+/* Add this style for the video */
+video {
+    position: absolute; /* Position video absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the entire background */
+    z-index: -1; /* Send video behind other elements */
+}
+
+.popup {
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.popup-content {
+    position: relative; /* Position relative for content */
+    text-align: center; /* Center text */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    margin-top: 25px; /* Adjust to position content above the wave */
+}
+
+.header {
+    font-size: 3em; /* Large font size for the header */
+    font-weight: bold; /* Make the header bold */
+    color: white; /* White text color */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for visibility */
+}
+
+.paragraph {
+    font-size: 1.5em; /* Set font size for the paragraph */
+    color: white; /* White text color */
+    margin: 5px 0; /* Reduced vertical margin for spacing */
+    text-align: center; /* Center the paragraph */
+}
+
+svg { 
+    display: inline-block; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 1; /* Bring SVG above the video */
 }
