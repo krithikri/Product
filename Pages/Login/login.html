@@ -8,11 +8,13 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <video autoplay muted loop class="background-video">
         <source src="car.mp4" type="video/mp4"> 
-        Your browser does not support the video tag.
     </video>
     <div class="container">
         <div class="login-container">
@@ -31,10 +33,19 @@
             <p class="sign-in-option">Don't have an account? <a href="signup.html">Sign Up</a></p>
         </div>
         <div class="text-container">
-            <h2>Welcome to Our Platform</h2>
-            <p>Join us today and experience the best services we have to offer.</p>
+            <h2>Discover</h2>
+            <p1>The World of</p1>
+            <P2>Cars..!!</P2>
+            <p class="typing-effect">
+                <span>L</span><span>e</span><span>t'</span><span>s</span><span></span>
+                <span>g</span><span>e</span><span>t</span><span> </span>
+                <span>S</span><span>t</span><span>a</span><span>r</span><span>t</span><span>e</span><span>d</span><span>...</span><span><span>!!</span>
+            </p>
+            <p5>Powered by DEV DEVILS</p5>
         </div>
-    </div>
+    </div>  
+    <img src="../../Assets/ddlogo.png" type="image/png" class="logo">
+
     <script>
         function login() {
             const storedUsername = localStorage.getItem('username');
