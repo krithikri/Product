@@ -22,6 +22,7 @@ body {
 
 .login-container {
     background: black; /* Change login box color to black */
+    background: none;
     padding: 30px; /* Increased padding for the box */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
